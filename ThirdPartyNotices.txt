@@ -417,7 +417,8 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 APP ICON COPYRIGHT
 ============================================================
 
-The final application icon composition is Copyright (c) 2025 OctoberSama.
+The final application icon composition is Copyright (c) 2025 OctoberSama (Original Author) and Copyright (c) 2026 Zyx-2012 (Next Version Contributor).
+
 
 ============================================================
 COMPONENT: GitHub Octicons (README Badge Icon)

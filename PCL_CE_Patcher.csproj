@@ -7,14 +7,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
     <ApplicationManifest>app.manifest</ApplicationManifest> <!-- 关联清单文件 -->
-    <AssemblyName>PCL CE Patcher</AssemblyName>
+    <AssemblyName>PCL_CE_Patcher_win_x64</AssemblyName>
     <AssemblyTitle>PCL CE Patcher</AssemblyTitle>
     <RootNamespace>PCL_CE_Patcher</RootNamespace>
     <PackageId>PCL CE Patcher</PackageId>
 	<Version>1.0.0</Version>
-    <Authors>OctoberSama</Authors>
+    <Authors>Zyx-2012</Authors>
     <Product>PCL CE Patcher</Product>
-	<Copyright>Copyright © 2025 OctoberSama</Copyright>
+	<Copyright>Copyright © 2026 Zyx-2012</Copyright>
     <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
     
     <!-- 单文件发布配置 -->
