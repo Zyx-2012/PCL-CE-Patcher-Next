@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationManifest>app.manifest</ApplicationManifest> <!-- 关联清单文件 -->
+    <AssemblyName>PCL CE Patcher</AssemblyName>
+    <AssemblyTitle>PCL CE Patcher</AssemblyTitle>
+    <RootNamespace>PCL_CE_Patcher</RootNamespace>
+    <PackageId>PCL CE Patcher</PackageId>
+	<Version>1.0.0</Version>
+    <Authors>OctoberSama</Authors>
+    <Product>PCL CE Patcher</Product>
+	<Copyright>Copyright © 2025 OctoberSama</Copyright>
+    <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
+    
+    <!-- 单文件发布配置 -->
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>false</SelfContained>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AsmResolver.DotNet" Version="5.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- 将 Assets 作为 Content 包含在单文件中 -->
+    <Content Include="Assets\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>false</ExcludeFromSingleFile>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include=".github\workflows\" />
+  </ItemGroup>
+
+</Project>
